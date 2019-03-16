@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Final.Account" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <AssociationLine Name="checkingAccount" Type="Final.Checking" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="3.031" />
+        <Point X="3.562" Y="3.031" />
+        <Point X="3.562" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.552" Y="-1.581" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="loanAccounts" Type="Final.Loan" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.312" />
+        <Point X="5.25" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.044" Y="0.363" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="savingsAccount" Type="Final.Savings" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.688" Y="3.312" />
+        <Point X="5.688" Y="4.125" />
+        <Point X="7.5" Y="4.125" />
+        <Point X="7.5" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.174" Y="0.376" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAACAgAAAgIAACAAAAAgAAIAEAAAABAAAAAA=</HashCode>
+      <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="checkingAccount" />
+      <Field Name="customer" />
+      <Field Name="savingsAccount" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="loanAccounts" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="1.084" />
+  </Class>
+  <Class Name="Final.ATM" Collapsed="true">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ATM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.BankAccounts" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAQA=</HashCode>
+      <FileName>BankAccounts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.Cash" Collapsed="true">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.Check" Collapsed="true">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Check.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.Checking" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="withdrawal" Type="Final.Transaction" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="4.968" />
+        <Point X="4.125" Y="4.968" />
+        <Point X="4.125" Y="5.938" />
+        <Point X="5.25" Y="5.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.625" Y="-0.003" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="deposit" Type="Final.Transaction" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="4.999" />
+        <Point X="4.125" Y="4.999" />
+        <Point X="4.125" Y="5.625" />
+        <Point X="5.25" Y="5.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.672" Y="0.028" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAGAgAAAAI=</HashCode>
+      <FileName>Checking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="withdrawal" />
+      <Field Name="deposit" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final.Customer" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.Loan" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAlAAAABQBAAAAAQAAAAAQEAAAEBAAAACAABAAAI=</HashCode>
+      <FileName>Loan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="payments" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="1.036" />
+  </Class>
+  <Class Name="Final.Savings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <AssociationLine Name="deposit" Type="Final.Transaction">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.136" Y="-0.161" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="withdrawal" Type="Final.Transaction">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.12" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAGAgAAAAI=</HashCode>
+      <FileName>Savings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="deposit" />
+      <Field Name="withdrawal" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="1.084" />
+  </Class>
+  <Class Name="Final.Transaction" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAABA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Final.IAccount" Collapsed="true">
+    <Position X="1.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>IAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

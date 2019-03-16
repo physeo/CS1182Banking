@@ -1,0 +1,5 @@
+C:\Users\Bryce\Google Drive\School Stuff\College Fall 2014\CS 1182\Projects\Final\Final\bin\Debug\Final.exe.config
+C:\Users\Bryce\Google Drive\School Stuff\College Fall 2014\CS 1182\Projects\Final\Final\obj\Debug\Final.csprojResolveAssemblyReference.cache
+C:\Users\Bryce\Google Drive\School Stuff\College Fall 2014\CS 1182\Projects\Final\Final\obj\Debug\Final.Form1.resources
+C:\Users\Bryce\Google Drive\School Stuff\College Fall 2014\CS 1182\Projects\Final\Final\obj\Debug\Final.Properties.Resources.resources
+C:\Users\Bryce\Google Drive\School Stuff\College Fall 2014\CS 1182\Projects\Final\Final\obj\Debug\Final.csproj.GenerateResource.Cache
